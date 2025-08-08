@@ -17,18 +17,26 @@
         }
         .main-container {
             max-width: 960px;
-            margin: 3rem auto;
+            margin: 1.5rem auto;
             background-color: #fff;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             border: 1px solid #e0e0e0;
         }
         .section-title {
-            font-size: 1.75rem;
+            font-size: 1.5rem; /* Mobile font size */
             font-weight: 900;
             color: #2c3e50;
             margin-bottom: 2rem;
             padding-bottom: 0.75rem;
             border-bottom: 3px solid #34495e;
+        }
+        @media (min-width: 768px) { /* Desktop font size */
+            .section-title {
+                font-size: 1.75rem;
+            }
+            .main-container {
+                 margin: 3rem auto;
+            }
         }
         .text-content {
             line-height: 1.8;
@@ -80,16 +88,16 @@
 <body class="text-gray-800">
 
     <div class="main-container">
-        <main class="p-12">
-            <header class="text-center mb-16">
-                <h1 class="text-4xl sm:text-5xl font-black text-gray-800 mb-4">TV-Spot 영상 제작 제안서</h1>
-                <h2 class="text-2xl sm:text-3xl font-bold text-gray-600">경남 청년 스토리 콘테스트</h2>
-                <div class="flex justify-center text-sm text-gray-500 mt-6 pt-4 border-t w-1/2 mx-auto">
+        <main class="p-6 md:p-12">
+            <header class="text-center mb-12 md:mb-16">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-gray-800 mb-4">TV-Spot 영상 제작 제안서</h1>
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-600">경남 청년 스토리 콘테스트</h2>
+                <div class="flex justify-center text-sm text-gray-500 mt-6 pt-4 border-t w-full md:w-1/2 mx-auto">
                     <span><b>기획일자:</b> 2025-08-08</span>
                 </div>
             </header>
 
-            <div class="space-y-16">
+            <div class="space-y-12 md:space-y-16">
                 <section id="section-1">
                     <h3 class="section-title">1. 홍보 목표 및 취지</h3>
                     <p class="text-content">
@@ -100,12 +108,12 @@
                 <section id="section-2">
                     <h3 class="section-title">2. 사업 개요</h3>
                     <div class="card overflow-hidden">
-                        <table class="w-full text-left">
+                        <table class="w-full text-left text-sm sm:text-base">
                             <tbody>
-                                <tr class="border-b"><td class="p-4 font-bold w-1/4 table-header">사 업 명</td><td class="p-4">경남 청년 스토리 콘테스트 스팟 영상 제작</td></tr>
-                                <tr class="border-b"><td class="p-4 font-bold table-header">형    식</td><td class="p-4">실사 기반 다큐형 스팟 영상 (30초)</td></tr>
-                                <tr class="border-b"><td class="p-4 font-bold table-header">주요 내용</td><td class="p-4">경남 청년 2인의 실제 스토리(귀촌·문화예술)와 콘테스트 정보 전달</td></tr>
-                                <tr><td class="p-4 font-bold table-header">핵심 방향</td><td class="p-4">진정성 있는 스토리텔링, 활력 있는 영상미, 명확한 정보 전달</td></tr>
+                                <tr class="border-b"><td class="p-3 sm:p-4 font-bold w-1/3 md:w-1/4 table-header">사 업 명</td><td class="p-3 sm:p-4">경남 청년 스토리 콘테스트 스팟 영상 제작</td></tr>
+                                <tr class="border-b"><td class="p-3 sm:p-4 font-bold table-header">형    식</td><td class="p-3 sm:p-4">실사 기반 다큐형 스팟 영상 (30초)</td></tr>
+                                <tr class="border-b"><td class="p-3 sm:p-4 font-bold table-header">주요 내용</td><td class="p-3 sm:p-4">경남 청년 2인의 실제 스토리(귀촌·문화예술)와 콘테스트 정보 전달</td></tr>
+                                <tr><td class="p-3 sm:p-4 font-bold table-header">핵심 방향</td><td class="p-3 sm:p-4">진정성 있는 스토리텔링, 활력 있는 영상미, 명확한 정보 전달</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -114,15 +122,15 @@
                 <section id="section-3">
                     <h3 class="section-title">3. 콘텐츠 구성안</h3>
                     <div class="space-y-6">
-                        <div class="card p-6">
+                        <div class="card p-4 sm:p-6">
                             <p class="font-semibold text-lg mb-2 text-gray-800">구성 1: 청년 스토리 (귀촌) (0초-7초)</p>
                             <p class="text-content">아침 햇살 속 농장에서 작업하는 귀촌 청년의 모습과 함께 "경남에서 확신이 생겼어요"라는 진솔한 대사로 영상의 문을 엽니다.</p>
                         </div>
-                        <div class="card p-6">
+                        <div class="card p-4 sm:p-6">
                             <p class="font-semibold text-lg mb-2 text-gray-800">구성 2: 청년 스토리 (문화예술) (7초-14초)</p>
                             <p class="text-content">소극장 무대 위 문화예술 청년의 열정적인 모습과 "제가 꿈꾸던 무대, 경남에서 시작했어요"라는 대사로 스토리를 이어갑니다.</p>
                         </div>
-                        <div class="card p-6">
+                        <div class="card p-4 sm:p-6">
                             <p class="font-semibold text-lg mb-2 text-gray-800">구성 3: 정보 전달 (15초-28초)</p>
                             <p class="text-content">"지금, 당신의 이야기를 기다립니다"라는 나레이션과 함께, 2단 슬라이드 형식의 모션 그래픽으로 콘테스트 핵심 정보를 명확하게 전달합니다.</p>
                             <div class="mt-4 bg-gray-100 p-4 rounded-md text-sm border">
@@ -130,7 +138,7 @@
                                 <p><b>• 정보 2:</b> 분야: 취업, 창업 등 8개 분야 / 혜택: 참가자 상품권 지급, 수상작 시상 및 홍보 지원</p>
                             </div>
                         </div>
-                        <div class="card p-6">
+                        <div class="card p-4 sm:p-6">
                             <p class="font-semibold text-lg mb-2 text-gray-800">구성 4: 마무리 (29초-30초)</p>
                             <p class="text-content">경상남도 로고와 함께 "지금, 당신의 이야기를 들려주세요" 라는 나레이션으로 마무리하며, 검색을 유도하는 자막으로 직접적인 행동을 촉구합니다.</p>
                         </div>
@@ -140,8 +148,8 @@
                 <section id="section-4">
                     <h3 class="section-title">4. 시각 스타일 (레퍼런스)</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <img src="./re.png" alt="시각적 스타일 레퍼런스 이미지" class="rounded-lg shadow-xl w-full border-4 border-white">
-                        <div class="text-content">
+                        <img src="re.png" alt="시각적 스타일 레퍼런스 이미지" class="rounded-lg shadow-xl w-full border-4 border-white">
+                        <div class="text-content mt-6 md:mt-0">
                             <ul class="list-disc list-inside space-y-2">
                                 <li><span class="font-semibold">타이포그래피:</span> 크고 굵은 서체와 원색 면 그래픽을 결합하여 주목도를 높입니다.</li>
                                 <li><span class="font-semibold">그래픽 요소:</span> 손그림 느낌의 아이콘을 추가하여 활기차고 친근한 느낌을 더합니다.</li>
@@ -154,51 +162,55 @@
                 <section id="section-5">
                     <h3 class="section-title">5. 출연자 섭외 계획</h3>
                     <div class="card overflow-hidden">
-                        <table class="w-full text-left">
-                            <thead class="table-header">
-                                <tr>
-                                    <th class="p-4 font-bold">구분</th>
-                                    <th class="p-4 font-bold">섭외 대상</th>
-                                    <th class="p-4 font-bold">섭외 경로</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b">
-                                    <td class="p-4 font-semibold">청년 1</td>
-                                    <td class="p-4">귀촌 청년</td>
-                                    <td class="p-4">경남 귀농·귀촌 지원센터 네트워크 추천 및 직접 접촉</td>
-                                </tr>
-                                <tr class="border-b">
-                                    <td class="p-4 font-semibold">청년 2</td>
-                                    <td class="p-4">문화예술 청년</td>
-                                    <td class="p-4">경남문화예술진흥원, 지역 예술 단체 협조 및 추천</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-4 font-semibold">섭외 절차</td>
-                                    <td class="p-4" colspan="2">전화/이메일 접촉 → 사전 미팅(콘셉트 설명 및 협의) → 촬영 일정 확정</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm sm:text-base">
+                                <thead class="table-header">
+                                    <tr>
+                                        <th class="p-3 sm:p-4 font-bold">구분</th>
+                                        <th class="p-3 sm:p-4 font-bold">섭외 대상</th>
+                                        <th class="p-3 sm:p-4 font-bold">섭외 경로</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3 sm:p-4 font-semibold">청년 1</td>
+                                        <td class="p-3 sm:p-4">귀촌 청년</td>
+                                        <td class="p-3 sm:p-4">경남 귀농·귀촌 지원센터 네트워크 추천 및 직접 접촉</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3 sm:p-4 font-semibold">청년 2</td>
+                                        <td class="p-3 sm:p-4">문화예술 청년</td>
+                                        <td class="p-3 sm:p-4">경남문화예술진흥원, 지역 예술 단체 협조 및 추천</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 sm:p-4 font-semibold">섭외 절차</td>
+                                        <td class="p-3 sm:p-4" colspan="2">전화/이메일 접촉 → 사전 미팅(콘셉트 설명 및 협의) → 촬영 일정 확정</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </section>
 
                 <section id="section-6">
                     <h3 class="section-title">6. 제작 일정</h3>
                     <div class="card overflow-hidden">
-                        <table class="w-full text-left">
-                            <thead class="table-header">
-                                <tr>
-                                    <th class="p-4 font-bold">단계</th>
-                                    <th class="p-4 font-bold">일정</th>
-                                    <th class="p-4 font-bold">주요 내용</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b"><td class="p-4">기획 및 섭외</td><td class="p-4">8.11(월) ~ 8.13(수)</td><td class="p-4">콘셉트 확정, 출연자/장소 섭외 및 허가 조율</td></tr>
-                                <tr class="border-b"><td class="p-4">촬영 준비 및 실행</td><td class="p-4">8.14(목) ~ 8.16(토)</td><td class="p-4">로케이션 점검, 장비 세팅 및 본 촬영 진행</td></tr>
-                                <tr><td class="p-4">후반작업 및 납품</td><td class="p-4">8.16(토) ~ 8.17(일)</td><td class="p-4">편집, 색보정, 그래픽/사운드 작업 후 최종 납품</td></tr>
-                            </tbody>
-                        </table>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm sm:text-base">
+                                <thead class="table-header">
+                                    <tr>
+                                        <th class="p-3 sm:p-4 font-bold">단계</th>
+                                        <th class="p-3 sm:p-4 font-bold">일정</th>
+                                        <th class="p-3 sm:p-4 font-bold">주요 내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b"><td class="p-3 sm:p-4">기획 및 섭외</td><td class="p-3 sm:p-4">8.11(월) ~ 8.13(수)</td><td class="p-3 sm:p-4">콘셉트 확정, 출연자/장소 섭외 및 허가 조율</td></tr>
+                                    <tr class="border-b"><td class="p-3 sm:p-4">촬영 준비 및 실행</td><td class="p-3 sm:p-4">8.14(목) ~ 8.16(토)</td><td class="p-3 sm:p-4">로케이션 점검, 장비 세팅 및 본 촬영 진행</td></tr>
+                                    <tr><td class="p-3 sm:p-4">후반작업 및 납품</td><td class="p-3 sm:p-4">8.16(토) ~ 8.17(일)</td><td class="p-3 sm:p-4">편집, 색보정, 그래픽/사운드 작업 후 최종 납품</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </section>
 
